@@ -1,0 +1,33 @@
+.top-buffer { padding:20px 0px 120px 0px; }
+
+.timeline { padding:20px 0px 20px 0px; }
+
+.primary-bg {background-color: #2196F3;}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#image {
+  margin-top:-100px;
+  max-width: 100%; 
+}
+
+#img-caption {
+  text-align: center;
+  margin: 20px 200px 20px 200px;
+}
+
+a {
+    color: #444;
+}
+
+.footer {
+  padding:20px 0px 20px 0px;
+}
+
+#title, #read_more {
+    color: white;
+}
+
