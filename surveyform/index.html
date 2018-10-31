@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <form id="survey-form">
+            <div class="row">
+                <p id="description">Please fill out the survey</p>
+            </div>
+
+            <div class="row">
+                <label id="name-label" class="left-label" for="name">Name</label>
+                <input id="name" class="right-input" type="text" placeholder="Enter your name" required />
+            </div>
+
+            <div class="row">
+                <label id="email-label" class="left-label" for="email">Email</label>
+                <input id="email" class="right-input" type="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="row">
+                <label id="number-label" class="left-label" for="number">Age</label>
+                <input id="number" class="right-input" type="number" min="1" max="100" placeholder="Enter your age" />
+            </div>
+
+            <div class="row">
+                <label class="left-label" for="dropdown">Favorite Team</label>
+                <select class="right-input" id="dropdown">
+                    <option class="left-label" value="liverpool" selected>Liverpool</option>
+                    <option class="right-input" value="barcelona">Barcelona</option>
+                </select> 
+            </div>
+
+            <div class="row">
+                <div class="left-label">Favourite player</div>
+                <div class="right-input">
+                    <ul class="option-list">
+                        <li>
+                            <label for="stevie">
+                                <input type="radio" name="favourite_player" id="stevie" value="stevie" />
+                                Steven Gerrard
+                            </label>
+                        </li>
+                        <li>
+                            <label for="leo">
+                                <input type="radio" name="favourite_player" id="leo" value="leo" />
+                                Lionel Messi
+                            </label>
+                        </li>
+                        <li>
+                            <label for="mo">
+                                <input type="radio" name="favourite_player" id="mo" value="mo" />
+                                Mo Salah
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="left-label">Subscribe to</div>
+                <div class="right-input">
+                    <ul class="option-list">
+                        <li>
+                            <label for="news-updates">
+                                <input type="checkbox" id="news-updates" value="newsupdates" /> 
+                                News Updates
+                            </label>
+                        </li>
+                        <li>
+                            <label for="transfer-updates">
+                                <input type="checkbox" id="transfer-updates" value="transferupdates" />
+                                Transfer Updates
+                            </label> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="left-label" id="text-label" for="comments">Additional Comments</label>
+                <textarea id="comments" class="right-input" rows="5" placeholder="Your Comment"></textarea>
+            </div>
+
+            <div class="row">
+                <button id="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
