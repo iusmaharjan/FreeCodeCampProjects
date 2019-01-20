@@ -1,0 +1,57 @@
+.full-page {
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#how-it-works {
+    height: auto;
+    max-height: 100vh;
+}
+
+.video-container {
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.features-row {
+    justify-content: space-around;
+}
+
+.footer {
+    height: 30vh;;
+}
+
+.card {
+    padding: 0;
+    width: 300px;
+    max-width: 80%;
+}
+
+.card .card-body {
+    background: #EAEAEA;
+    margin: 0; 
+    text-align: center; 
+}
+
+.card .card-body .card-title {
+    font-size: 1.2rem;
+}
